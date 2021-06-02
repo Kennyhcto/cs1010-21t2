@@ -11,4 +11,6 @@
 ### Python Introduction part 2
 * Boolean
 * Conditionals
+* User input
 * Loops
+* Writing functions

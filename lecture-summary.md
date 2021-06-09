@@ -15,6 +15,8 @@
 ### Python Introduction part 3
 * User input
 * Loops
+
+### Python Introduction part 4
 * Writing functions
 * Testing (TDD) (and switch)
 * Lists

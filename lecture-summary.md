@@ -24,8 +24,11 @@
 
 ### Python Introduction part 4
 * Writing functions
-* Testing (TDD) (and switch)
-* Lists
+* Testing (TDD)
+* Lists - part 1
+
+### Python Introduction part 5
+* Lists - part 2
 * Dictionaries
 * Modules and Libraries (Datetime, Random, Images)
 * More complex data structures

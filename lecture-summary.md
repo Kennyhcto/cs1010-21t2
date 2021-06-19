@@ -44,6 +44,7 @@
 * Databases?
 * PyGame?
 * List comprehension
+* Serialisation and persistance
 
 More dictionaries:
 * Using dictionaries for obfuscation

@@ -37,4 +37,10 @@
 ### Python Introduction - Leftover Topics yet to be covered
 * Modules and Libraries (Musk Tweets Plotly)
 * More questions with lists and dictionaries
+* Tuples
+* Sets?
+* None
+
+More dictionaries:
 * Using dictionaries for obfuscation
+* Added later, but not covered: iterating through dictionaries (add to lect 5 document)

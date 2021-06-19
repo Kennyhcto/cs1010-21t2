@@ -40,6 +40,10 @@
 * Tuples
 * Sets?
 * None
+* Exceptions
+* Databases?
+* PyGame?
+* List comprehension
 
 More dictionaries:
 * Using dictionaries for obfuscation

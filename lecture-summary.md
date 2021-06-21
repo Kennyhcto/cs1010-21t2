@@ -53,21 +53,21 @@
 
 # Topics Not Yet Covered
 
-### Python - Leftover Topics and exercises yet to be covered
+### Python Revision
+* More questions with loops, lists and dictionaries
+
+### Python Introduction
 * Modules and Libraries (Musk Tweets Plotly)
-* More questions with lists and dictionaries
+
+### Python - Furthur Topics
 * Tuples
-* Sets?
 * None
 * Exceptions
+* Serialisation and persistance
+* Recursion?
 * Databases?
 * PyGame?
-* List comprehension
-* Serialisation and persistance
-* Recursion
-
-### Web Apps - Further topics
-* Cookies
-* Javascript
+* List comprehension?
+* Sets?
 
 

@@ -1,13 +1,15 @@
 # Topics Covered
 
-> Week 1
+## Week 1
+
+### Spreadsheets
 
 ### Python Introduction part 1
 * Variables
 * Strings
 * Calling functions and methods
 
-> Week 2
+## Week 2
 
 ### Python Introduction part 2
 * Print
@@ -20,7 +22,7 @@
 * User input
 * Loops
 
-> Week 3
+## Week 3
 
 ### Python Introduction part 4
 * Writing functions
@@ -32,9 +34,21 @@
 * Dictionaries
 * Modules and Libraries (Datetime, Random, Images)
 
+## Week 4
+
+### Python Introduction part 6
+* Using dictionaries for obfuscation
+* Iterating through dictionaries
+
+### Web Applications Introduction
+* HTML
+* CSS
+* Flask
+* PyHTML
+
 # Topics Not Yet Covered
 
-### Python Introduction - Leftover Topics yet to be covered
+### Python - Leftover Topics and exercises yet to be covered
 * Modules and Libraries (Musk Tweets Plotly)
 * More questions with lists and dictionaries
 * Tuples
@@ -46,6 +60,8 @@
 * List comprehension
 * Serialisation and persistance
 
-More dictionaries:
-* Using dictionaries for obfuscation
-* Added later, but not covered: iterating through dictionaries (add to lect 5 document)
+### Web Apps - Further topics
+* Cookies
+* Javascript
+
+

@@ -46,6 +46,11 @@
 * Flask
 * PyHTML
 
+### Web Applications Further Topics
+* Javascript
+* Cookies
+* APIs
+
 # Topics Not Yet Covered
 
 ### Python - Leftover Topics and exercises yet to be covered
@@ -59,6 +64,7 @@
 * PyGame?
 * List comprehension
 * Serialisation and persistance
+* Recursion
 
 ### Web Apps - Further topics
 * Cookies

@@ -8,7 +8,6 @@ def hello():
     code = html(
         head(
             title("Second PyHTML Program"),
-            link(rel="stylesheet", href="static/style2.css")
         ),
         body(
             p("Hello everyone!!"),

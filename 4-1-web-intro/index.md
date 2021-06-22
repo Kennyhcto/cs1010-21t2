@@ -1,6 +1,6 @@
 ### HTML and CSS
 * 0_0_html.html: Static html. No forms. No CSS. (Text formatting, tables, lists, headings. Title on the top of the webpage.)
-* 0_1_css.html: Now using CSS. (example1a.css, example1b.css)
+* 0_1_css.html: Now using CSS. (In static/ folder: style1.css, style2.css)
 * 0_2_forms.html: Forms.
 * 0_3_html5.html: HTML5 features.
 

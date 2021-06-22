@@ -46,12 +46,14 @@
 * Flask
 * PyHTML
 
+
+# Topics Not Yet Covered
+
+
 ### Web Applications Further Topics
 * Javascript
 * Cookies
 * APIs
-
-# Topics Not Yet Covered
 
 ### Python Revision
 * More questions with loops, lists and dictionaries

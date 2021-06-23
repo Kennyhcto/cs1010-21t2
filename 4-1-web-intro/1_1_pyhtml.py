@@ -1,12 +1,14 @@
 from flask import Flask
-from pyhtml import html, title, body, p, table, tr, td, strong
+from pyhtml import html, title, body, p, table, tr, td, strong, head
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
     code = html(
-        title("First PyHTML Program"),
+        head(
+            title("First PyHTML Program")
+        ),
         body(
             p("Hello everyone!!"),
             table(

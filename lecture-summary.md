@@ -46,9 +46,16 @@
 * Flask
 * PyHTML
 
+### Python Further Topics
+* Tuples
+* None
+* Exceptions
+
+### Python Extra Examples
+* Modules and Libraries (Musk Tweets Plotly)
+* Lists and Dictionaries Examples - Splitting the Bill
 
 # Topics Not Yet Covered
-
 
 ### Web Applications Further Topics
 * Javascript
@@ -58,13 +65,9 @@
 ### Python Revision
 * More questions with loops, lists and dictionaries
 
-### Python Introduction
-* Modules and Libraries (Musk Tweets Plotly)
 
 ### Python - Furthur Topics
-* Tuples
-* None
-* Exceptions
+
 * Serialisation and persistance
 * Recursion?
 * Databases?

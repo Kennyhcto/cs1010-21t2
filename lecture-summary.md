@@ -61,6 +61,7 @@
 * Javascript
 * Cookies
 * APIs
+* Very simple database use (storing usernames and passwords) (and the why and how of hashing passwords)
 
 ### Python Revision
 * More questions with loops, lists and dictionaries

@@ -55,6 +55,18 @@
 * Modules and Libraries (Musk Tweets Plotly)
 * Lists and Dictionaries Examples - Splitting the Bill
 
+## Week 5 (the plan)
+
+### Python Extra Examples
+* Lists and Dictionaries Examples - Splitting the Bill (another approach)
+
+### Python Further Topics
+* 2.4 Serialisation
+
+### Web Applications Further Topics
+* Cookies
+* Javascript
+
 # Topics Not Yet Covered
 
 ### Web Applications Further Topics

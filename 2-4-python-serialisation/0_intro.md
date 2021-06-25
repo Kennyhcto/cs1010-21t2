@@ -11,8 +11,8 @@ such that they can be stored or transmitted.
 Here we are going to look at 3 different ways of doing this:
 1. Plain text file (`1_plain_text.py`)
 2. CSV file
-    a. storing lists (`2a_csv_list.py`)
-    b. storing dictionaries (`2b_csv_dict.py`)
+    * storing lists (`2a_csv_list.py`)
+    * storing dictionaries (`2b_csv_dict.py`)
 3. JSON file (`3_json.py`)
 
 

@@ -18,11 +18,8 @@ def read_json_file():
 
 
 def write_json_file(data):
-    f = open('week5/serialisation-answers/major_parts.json', 'w')
-    f.write(json.dumps(data))
-    f.close()
+    pass
 
 
 if __name__ == "__main__":
-    major_parts = get_sample_data()
-    write_json_file(major_parts)
+    pass

@@ -1,5 +1,9 @@
 """
 Reading and Writing Plain Text Files
+
+* How to know where the files will save?
+* What happens if you don't close a file?
+* What happens if the folder/file doesn't exist?
 """
 
 

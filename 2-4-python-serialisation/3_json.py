@@ -1,7 +1,8 @@
 """
 JSON
 
-JavaScript Object Notation (JSON) is a serialisation format with its origins in the Javascript language. However, in recent times it has become a universal standard used by many languages and tools for storing data.
+JavaScript Object Notation (JSON) is a serialisation format with its origins in the Javascript language.
+However, in recent times it has become a universal standard used by many languages and tools for storing data.
 
 Important points:
  * JSON looks very similar to how we write data structures in Python.
@@ -22,10 +23,33 @@ def get_sample_data():
     ]
 
 def read_json_file():
-  pass
+  # open
+  f = open('files/3_data.json', 'r')
+  # read
+  tutorials = json.loads(f.read())
+  # close
+  f.close()
+  return tutorials
 
 def write_json_file(data):
-  pass
+  # open
+  f = open('files/3_data.json', 'w')
+  # write
+  f.write(json.dumps(data))
+  # close
+  f.close()
 
 if __name__ == "__main__":
-  pass
+  #tutorials = get_sample_data()
+  #write_json_file(tutorials)
+
+  tutorials = read_json_file()
+  #print(tutorials)
+  #print(tutorials[1]['tutor'])
+  tutorials.append({
+        "tutorial": "T15A",
+        "tutor": "Liz",
+        "enrollments": 23
+    })
+  print(tutorials)
+  write_json_file(tutorials)

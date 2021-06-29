@@ -16,12 +16,41 @@ def get_sample_data_dict():
 
 
 def read_csv_as_dict():
-    pass
+    # create empty list to read the file into
+    tutorials = []
+
+    # open the file
+    f = open('files/tutorials_dict.csv', 'r')
+
+    # create a dictionary reader
+    csv_reader = csv.DictReader(f)
+
+    # read in the file
+    for row in csv_reader:
+        tutorials.append(row)
+
+    # close the file
+    f.close()
+
+    # return the information read in
+    return tutorials
 
 
 def write_dict_as_csv(tutorials):
-    pass
+    f = open('files/tutorials_dict.csv', 'w', newline='')
+    csv_writer = csv.DictWriter(
+        f, fieldnames=['tutorial', 'tutor', 'enrollments']
+    )
+    csv_writer.writeheader()
+    for tutorial in tutorials:
+        csv_writer.writerow(tutorial)
+
+    f.close()
+
 
 
 if __name__ == "__main__":
-    pass
+    tutorials = read_csv_as_dict()
+    print(tutorials)
+    #tutorials.append({'tutorial':'F09A', 'tutor':'Kai', 'enrollments':21})
+    write_dict_as_csv(tutorials)

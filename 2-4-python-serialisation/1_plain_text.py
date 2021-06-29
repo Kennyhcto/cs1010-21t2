@@ -13,12 +13,35 @@ def get_sample_data():
 
 
 def write_file(data):
-    pass
+    # open file
+    f = open('files/1_data.txt', 'w')
+
+    # write contents
+    for text in data:
+        f.write(text + '\n')
+
+    # close file
+    f.close()
 
 
 def read_file():
-    pass
+    # open
+    f = open('files/1_data.txt', 'r')
+
+    # read the contents
+    data = []
+    for line in f.readlines():
+        data.append(line.strip())
+
+    # close the file
+    f.close()
+
+    return data
 
 
 if __name__ == "__main__":
-    pass
+    #data = get_sample_data()
+    #write_file(data)
+
+    my_data = read_file()
+    print(my_data)

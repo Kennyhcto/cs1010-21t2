@@ -14,12 +14,23 @@ def get_sample_data():
 
 
 def read_json_file():
-    pass
-
+  # open
+  f = open('files/4_data.json', 'r')
+  # read
+  tutorials = json.loads(f.read())
+  # close
+  f.close()
+  return tutorials
 
 def write_json_file(data):
-    pass
+  # open
+  f = open('files/4_data.json', 'w')
+  # write
+  f.write(json.dumps(data))
+  # close
+  f.close()
 
 
 if __name__ == "__main__":
-    pass
+    stuff = get_sample_data()
+    write_json_file(stuff)

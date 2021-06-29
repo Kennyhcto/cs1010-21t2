@@ -57,15 +57,16 @@
 
 ## Week 5
 
+### Tuesday
+
 * 2-2 Python Further Topics (lect 2) --> Recursion
+* 2-4 Serialization
+
 
 ## Week 5 planned
 
 ### Python Extra Examples
 * Lists and Dictionaries Examples - Splitting the Bill (another approach)
-
-### Python Further Topics
-* 2.4 Serialisation
 
 ### Web Applications Further Topics
 * Cookies
@@ -85,8 +86,6 @@
 
 ### Python - Furthur Topics
 
-* Serialisation and persistance
-* Recursion?
 * Databases?
 * PyGame?
 * List comprehension?

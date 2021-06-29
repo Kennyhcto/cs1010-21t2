@@ -55,7 +55,11 @@
 * Modules and Libraries (Musk Tweets Plotly)
 * Lists and Dictionaries Examples - Splitting the Bill
 
-## Week 5 (the plan)
+## Week 5
+
+* 2-2 Python Further Topics (lect 2) --> Recursion
+
+## Week 5 planned
 
 ### Python Extra Examples
 * Lists and Dictionaries Examples - Splitting the Bill (another approach)

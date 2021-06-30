@@ -1,5 +1,7 @@
 import requests
 
+# API used: https://rapidapi.com/apidojo/api/imdb8/
+
 if __name__ == "__main__":
     url = "https://imdb8.p.rapidapi.com/title/get-coming-soon-movies"
 

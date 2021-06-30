@@ -15,7 +15,7 @@
 
 **Keywords:**
 * `from flask import session`
-* `app.config['SECRET_KEY'] = 'random_long_unguessable_string`
+* `app.config['SECRET_KEY'] = 'random_long_unguessable_string'`
 * `if 'key' in session:`
 * `value = session.get('key', default_value)`
 * `session['key'] = 'value'`

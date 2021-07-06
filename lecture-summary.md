@@ -62,22 +62,28 @@
 * 2-2 Python Further Topics (lect 2) --> Recursion
 * 2-4 Serialization
 
+### Wednesday
+
+* 4.2 Cookies
+* 4.3 Javascript
+* 4.4 External Data Sources (Client Libraries and APIs)
+
+## Week 6
+
+### Revision Lecture
+
+* Complex Data Structures
+* Recursion
+* Web Server including Cookies
 
 ## Week 5 planned
 
 ### Python Extra Examples
 * Lists and Dictionaries Examples - Splitting the Bill (another approach)
 
-### Web Applications Further Topics
-* Cookies
-* Javascript
-
 # Topics Not Yet Covered
 
 ### Web Applications Further Topics
-* Javascript
-* Cookies
-* APIs
 * Very simple database use (storing usernames and passwords) (and the why and how of hashing passwords)
 
 ### Python Revision

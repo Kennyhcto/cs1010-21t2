@@ -168,9 +168,7 @@ Keeping your application in its improved layout, implement the functionality lis
 
 
 
-
-
-Another example:
+## Another example:
 * Tutorials: course_code, code, tutor
 * Courses: course_code, title
 * Students: zid, fname, lname

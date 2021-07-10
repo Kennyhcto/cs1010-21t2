@@ -168,11 +168,16 @@ Keeping your application in its improved layout, implement the functionality lis
 
 
 
-## Another example:
+## Another Example:
 * Tutorials: course_code, code, tutor
 * Courses: course_code, title
 * Students: zid, fname, lname
 * Enrollments: course_code, tute_code, zid
+
+## Extra Resources:
+* [SQL Commands - Interactive](https://www.w3schools.com/sql/default.asp)
+* [SQLite3 Documentation](https://docs.python.org/3/library/sqlite3.html)
+* [SQLite Tutorial - Interactive](https://www.sqlitetutorial.net/sqlite-select/)
 
 
 ## Feedback

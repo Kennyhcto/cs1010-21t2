@@ -76,12 +76,29 @@
 * Recursion
 * Web Server including Cookies
 
-## Week 5 planned
+## Week 7 (planned)
+
+* Databases
+* Revision (html, pyhtml, flask, lists, dictionaries)
+
+## Week 8 (planned)
+
+* PyGame (simple introduction)
+* Object Orientated Programming
+
+## Week 9 (planned)
+
+* Storing passwords (hashing, salt, pepper)
+* Revision
+
+## Week 10 (planned)
+
+* Revision for exam
+
+# Topics Not Yet Covered
 
 ### Python Extra Examples
 * Lists and Dictionaries Examples - Splitting the Bill (another approach)
-
-# Topics Not Yet Covered
 
 ### Web Applications Further Topics
 * Very simple database use (storing usernames and passwords) (and the why and how of hashing passwords)

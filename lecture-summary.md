@@ -85,11 +85,12 @@
 
 * PyGame (simple introduction)
 * Object Orientated Programming
+* Revision: Any questions from tutes/labs 1-4
 
 ## Week 9 (planned)
 
 * Storing passwords (hashing, salt, pepper)
-* Revision
+* Revision: Any questions from tute/lab 1-5
 
 ## Week 10 (planned)
 

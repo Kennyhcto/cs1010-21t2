@@ -89,7 +89,8 @@
 
 ## Week 9 (planned)
 
-* Storing passwords (hashing, salt, pepper)
+* Storing passwords (hashing, salt, pepper), JWT
+* More date and time manipulation
 * Revision: Any questions from tute/lab 1-5
 
 ## Week 10 (planned)

@@ -76,14 +76,26 @@
 * Recursion
 * Web Server including Cookies
 
-## Week 7 (planned)
+## Week 7
 
-* Databases
-* Revision (html, pyhtml, flask, lists, dictionaries)
+### Tuesday
+
+* Databases part 1
+
+### Wednesday
+
+* Databases part 2
+* Revision (html, pyhtml, flask, lists, dictionaries) (Started Splittig the Bill web app implementation.)
 
 ## Week 8 (planned)
 
+### Tuesday
+
 * PyGame (simple introduction)
+* Revision: Continue Splitting the Bill web app implementation.
+
+### Wednesday
+
 * Object Orientated Programming
 * Revision: Any questions from tutes/labs 1-4
 

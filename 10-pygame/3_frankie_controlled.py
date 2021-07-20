@@ -1,0 +1,62 @@
+'''
+Display Frankie the Fox on the screen
+Bigger and in the middle
+'''
+
+import pygame
+import sys
+
+# import these key values so we can use them
+from pygame.locals import (
+    K_UP,
+    K_DOWN,
+    K_LEFT,
+    K_RIGHT,
+    K_ESCAPE,
+    KEYDOWN,
+    QUIT,
+)
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
+def main():
+    pygame.init()
+
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    frankie = pygame.image.load("10-pygame/foxr.gif")
+
+    # Make frankie bigger and centred
+    frankie = pygame.transform.rotozoom(frankie, 0, 4)
+    frankie_rect = frankie.get_rect()
+    frankie_rect.centerx = SCREEN_WIDTH/2
+    frankie_rect.centery = SCREEN_HEIGHT/2
+
+    while True:
+        for event in pygame.event.get():
+            #print(f"{event=}")
+            if event.type == pygame.QUIT:
+                sys.exit()
+
+            pressed_keys = pygame.key.get_pressed()
+            if pressed_keys[K_DOWN]: # K_DOWN means down arrow
+                frankie_rect.centery = frankie_rect.centery + 20
+            if pressed_keys[K_UP]: # K_UP means down arrow
+                frankie_rect.centery = frankie_rect.centery - 20
+            if pressed_keys[K_LEFT]: # K_LEFT means down arrow
+                frankie_rect.centerx = frankie_rect.centerx - 20
+            if pressed_keys[K_RIGHT]: # K_RIGHT means down arrow
+                frankie_rect.centerx = frankie_rect.centerx + 20
+
+
+        # Clear the screen
+        screen.fill((66, 135, 245))
+        # Draw frankie on screen and update screen
+        screen.blit(frankie, frankie_rect)
+        pygame.display.flip()
+
+
+
+
+if __name__ == "__main__":
+    main()

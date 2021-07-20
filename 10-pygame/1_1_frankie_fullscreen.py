@@ -2,16 +2,19 @@
 Display Frankie the Fox on the screen
 '''
 
+# https://pypi.org/project/screeninfo/
+
 import pygame
 import sys
+from screeninfo import get_monitors
 
 def main():
     # Initialize pygame library
     pygame.init()
 
-    # Set up a display 800 by 600
-    width = 800
-    height = 600
+    # Set up a display fullscreen
+    width = get_monitors()[0].width 
+    height = get_monitors()[0].height
     screen = pygame.display.set_mode((width, height))
 
     # Put frankie image into a variable
@@ -30,20 +33,6 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-
-'''
-(0,0).............(800,0)
-.                   .
-.                   .
-.                   .
-.                   .
-.                   .
-.                   .
-.                   .
-(0,600)...........(800,600)
-
-'''
-
 
 
 if __name__ == "__main__":

@@ -3,16 +3,16 @@
 ## Demo Summary
 
 
-| # | Description |
-|---|---|
+| # | Description | Topics |
+|---|---|---|
 | 1-0 | Display Frankie on the screen |
 | 1-1 | Fullscreen mode |
 | 2 | Increase Frankie's size and change location |
-| 3 | Control Frankie's location using the arrow keys |
+| 3 | Control Frankie's location using the arrow keys | Game Loop introduced<br>Scanning for Inputs introduced |
 | 4 | Make Frankie unable to fall off the screen |
 | 5 | Put other walls up so Frankie has to walk around them |
-| 6 | Have Frankie change or walls change without user input (introduction to the clock) |
-| 7-0 | Flappy Frankie introduction. Moving up and down based on space bar. |
+| 6 | Have Frankie change or walls change without user input (introduction to the clock) | Clock introduced |
+| 7-0 | Flappy Frankie introduction. Moving up and down based on space bar. | Game explained.<br>State Machine introduced |
 | 7-1 | Draw pipes. |
 | 7-2 | Many pipes. |
 | 7-3 | Pipes that move up and down. |

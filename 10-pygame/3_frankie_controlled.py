@@ -1,6 +1,5 @@
 '''
-Display Frankie the Fox on the screen
-Bigger and in the middle
+Frankie moves around by the arrow keys
 '''
 
 import pygame
@@ -41,11 +40,11 @@ def main():
             pressed_keys = pygame.key.get_pressed()
             if pressed_keys[K_DOWN]: # K_DOWN means down arrow
                 frankie_rect.centery = frankie_rect.centery + 20
-            if pressed_keys[K_UP]: # K_UP means down arrow
+            if pressed_keys[K_UP]: # K_UP means up arrow
                 frankie_rect.centery = frankie_rect.centery - 20
-            if pressed_keys[K_LEFT]: # K_LEFT means down arrow
+            if pressed_keys[K_LEFT]: # K_LEFT means left arrow
                 frankie_rect.centerx = frankie_rect.centerx - 20
-            if pressed_keys[K_RIGHT]: # K_RIGHT means down arrow
+            if pressed_keys[K_RIGHT]: # K_RIGHT means right arrow
                 frankie_rect.centerx = frankie_rect.centerx + 20
 
 

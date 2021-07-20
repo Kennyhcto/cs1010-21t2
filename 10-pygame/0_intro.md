@@ -19,20 +19,20 @@
 | 7-4 | End of game based on collision with pipes. |
 
 
-## Game Loop (animation)
+## Game Loop (animation) (demo 3 onwards)
 
 Draw, update, repeat.
 
-## Scanning for inputs
+## Scanning for inputs (demo 3 onwards)
 
-## Flappy Frankie
+## Clock (demo 6 onwards)
+clock.tick(frames) -- maximum number of frames per second. A low number your game will run slower, a high number your game will run fast.
+
+## Flappy Frankie (demo 7 onwards)
 
 Basically making this game: https://flappybird.io/
 
-## Clock
-clock.tick(frames) -- maximum number of frames per second. A low number your game will run slower, a high number your game will run fast.
-
-## State Machine
+## State Machine (demo 7 onwards)
 
 In our example:
 

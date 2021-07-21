@@ -1,9 +1,12 @@
 from flask import Flask, request, session
 from pyhtml import html, title, select, option, label, br, body, p, table, tr, td, strong, head, h1, form, input_, h3
 
+import json
+
 #import stb_database.py
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '8pXH18iVHM_pySw6PKrFK4NFD8yr9oo-Z7VxFnVsVvQ'
 
 # creating a drop-down list with options
 def get_select_list(items):
@@ -12,11 +15,11 @@ def get_select_list(items):
         select_list.append(
             option(value=item)(item)
         )
+    return select_list
 
 
 # get the radio buttons for selecting Group, Person or Menu Item
 def get_radio_buttons(group_name, labels, selected):
-    print(f"Getting radio buttons {selected=} {labels=}")
     buttons = []
     for text in labels:
         if text == selected:
@@ -39,19 +42,66 @@ def get_radio_buttons(group_name, labels, selected):
     buttons.append(br)
     return buttons
 
+def read_json_file():
+  f = open('9-splitting_the_bill_project/files/saved_data.json', 'r')
+  all_data = json.loads(f.read())
+  f.close()
+  return all_data['groups'],all_data['people'],all_data['menu_items']
+
+def write_json_file(groups, people, menu_items):
+    all_data = {}
+    all_data['groups'] = groups
+    all_data['people'] = people
+    all_data['menu_items'] = menu_items
+
+    f = open('9-splitting_the_bill_project/files/saved_data.json', 'w')
+    f.write(json.dumps(all_data))
+    f.close()
 
 @app.route('/', methods=['GET','POST'])
 def main():
 
-    groups = {}
-    people = {}
-    menu_items = []
+    groups = session.get('groups', {})
+    people = session.get('people', {})
+    menu_items = session.get('menu_items', [])
 
     adding_input_fields = []
     labels = ["Group", "Person", "Menu Item"]
 
     # if the user submitted a form
     if request.method == 'POST':
+        if 'save' in request.form:
+            write_json_file(groups, people, menu_items)
+            adding_input_fields = get_radio_buttons("add_type", labels, "")
+
+        if 'load' in request.form:
+            groups,people,menu_items = read_json_file()
+            adding_input_fields = get_radio_buttons("add_type", labels, "")
+
+        if 'clear_data' in request.form:
+            session.clear()
+            groups = session.get('groups', {})
+            people = session.get('people', {})
+            menu_items = session.get('menu_items', [])
+            adding_input_fields = get_radio_buttons("add_type", labels, "")
+
+        if 'submit_group' in request.form:
+            group_name = request.form['name']
+            groups[group_name] = {'size':0, 'total_spent':0}
+        elif 'submit_person' in request.form:
+            person_name = request.form['name']
+            group_name = request.form['group_name']
+            people[person_name] = {'group':group_name, 'amount_paid':0}
+        elif 'submit_item' in request.form:
+            item_name = request.form['name']
+            item_group = request.form['group_name']
+            item_price = request.form['price']
+            item_qty = request.form['qty']
+            menu_items.append({'name':item_name,
+                               'group':item_group,
+                               'price':item_price,
+                               'qty':item_qty})
+
         # if it's the radio button of "what to add"
         if 'add_type' in request.form:
             # check which type they want to add
@@ -62,7 +112,7 @@ def main():
                     get_radio_buttons("add_type", labels, "Group"),
                     label("Name: "),
                     input_(type="text", name="name"),br,
-                    input_(type="submit", name="submit_item")
+                    input_(type="submit", name="submit_group")
                 ]
             elif request.form['add_type'] == 'Person':
                 # for a person, we need their name and which group they're in
@@ -73,7 +123,7 @@ def main():
                     input_(type="text", name="name"),br,
                     label("Group: "),
                     select(name="group_name")(get_select_list(groups)),br,
-                    input_(type="submit", name="submit_item")
+                    input_(type="submit", name="submit_person")
                 ]
             elif request.form['add_type'] == 'Menu Item':
                 # for a menu item: name, group, price and qty
@@ -89,11 +139,33 @@ def main():
                     input_(type="number", name="qty"),br,
                     input_(type="submit", name="submit_item")
                 ]
+
     else:
         adding_input_fields = get_radio_buttons("add_type", labels, "")
 
     left_panel = []
-    left_panel.append("left side")
+
+    for group in groups:
+        left_panel.append(h3(group))
+        left_panel.append(br)
+        for person, p_data in people.items():
+            # for person in people:
+            #   p_data = people[person]
+            if p_data['group'] == group:
+                left_panel.append(person)
+                left_panel.append(br)
+        for item in menu_items:
+            if item['group'] == group:
+                left_panel.append(f"{item['name']}: ${float(item['price']):.2f} x {item['qty']}")
+                left_panel.append(br)
+
+
+
+    left_panel.append(form(action="/")(
+        input_(type="submit", value="Save", name="save"),br,
+        input_(type="submit", value="Load", name="load"),br,
+        input_(type="submit", value="Clear Data", name="clear_data")
+    ))
 
 
 
@@ -117,6 +189,13 @@ def main():
             table(tr(td(left_panel),td(adding_form)))
         )
     )
+
+    # Save our data as cookies
+    session['groups'] = groups
+    session['people'] = people
+    session['menu_items'] = menu_items
+    session.modified = True
+
     return str(code)
 
 if __name__ == "__main__":

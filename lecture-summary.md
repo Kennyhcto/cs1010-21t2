@@ -87,20 +87,21 @@
 * Databases part 2
 * Revision (html, pyhtml, flask, lists, dictionaries) (Started Splittig the Bill web app implementation.)
 
-## Week 8 (planned)
+## Week 8
 
 ### Tuesday
 
-* PyGame (simple introduction)
-* Revision: Continue Splitting the Bill web app implementation.
+* PyGame (part 1 and 2)
 
 ### Wednesday
 
-* Object Orientated Programming
-* Revision: Any questions from tutes/labs 1-4
+* PyGame (part 3)
+* Revision: Continue Splitting the Bill web app implementation.
 
 ## Week 9 (planned)
 
+* Object Orientated Programming
+* Revision: Any questions from tutes/labs 1-4
 * Storing passwords (hashing, salt, pepper), JWT
 * More date and time manipulation
 * Revision: Any questions from tute/lab 1-5

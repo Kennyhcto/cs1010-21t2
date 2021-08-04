@@ -22,6 +22,9 @@ while run:
         if e.type == pygame.QUIT: 
             run = False
 
+    # Clear screen, fill with background colour
     screen.fill((255, 255, 255))
+    # Put the text (counter) on the screen
     screen.blit(font.render(text, True, (0, 0, 0)), (32, 48))
+    # Display the screen
     pygame.display.flip()
